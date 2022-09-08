@@ -1,25 +1,25 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32811.315
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pennies from heaven", "Pennies from heaven\Pennies from heaven.csproj", "{1B2B0F34-5A66-48E0-AF6B-7342D577D460}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B2B0F34-5A66-48E0-AF6B-7342D577D460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B2B0F34-5A66-48E0-AF6B-7342D577D460}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B2B0F34-5A66-48E0-AF6B-7342D577D460}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B2B0F34-5A66-48E0-AF6B-7342D577D460}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {308059B9-30BE-43FF-A679-CDDA58A00EFB}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pennies_from_heaven
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            double user_input = Convert.ToInt64("Enter The Amount of Pennies: ");
+            int pennies = user_input;
+            int dollar = pennies / 100;
+            int quarter = (pennies / 100) * 4;
+            int dime = (pennies / 100) * 10;
+
+            Console.WriteLine("result is {0} dollars, {1} quarters, {2} dimes", dollar, quarter, dime);
+
+            Console.ReadLine();
+
+        }
+    }
+}
